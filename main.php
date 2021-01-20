@@ -46,19 +46,31 @@ $clearcolor = "\033[0m";
 
 foreach ($model as $obj) {
     if ($module->DISPLAY == true) {
+        echo $codebefore;
+        echo $module->COLOR;
         echo $obj->codemodule;
+        echo $clearcolor;
         echo " ";
     }
     if ($datedebut->DISPLAY == true) {
+        echo $codebefore;
+        echo $datedebut->COLOR;
         echo $obj->start;
+        echo $clearcolor;
         echo " ";
     }
     if ($datefin->DISPLAY == true) {
+        echo $codebefore;
+        echo $datefin->COLOR;
         echo $obj->end;
+        echo $clearcolor;
         echo " ";
     }
     if ($activitytitle->DISPLAY == true) {
+        echo $codebefore;
+        echo $activitytitle->COLOR;
         echo $obj->acti_title;
+        echo $clearcolor;
         echo " ";
     }
     if ($sectionregistered->DISPLAY == true) {
